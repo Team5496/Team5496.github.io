@@ -177,7 +177,7 @@ body {
     margin-right: 15px;
 }
 
-/* Custom scroll bar :) */
+/* Custom scrollbar :)
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -188,7 +188,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: maroon;
-}
+} */
 
 /* Screen resizing rules (to make it mobile friendly) */
 @media only screen and (max-width: 1000px){
