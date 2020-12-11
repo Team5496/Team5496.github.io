@@ -1,0 +1,233 @@
+/* Import cool font for title */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+/* Basic resets */
+* {
+    box-sizing: border-box; /* Make sure padding doesn't overflow */
+}
+
+html, body {
+    /* Some browsers set these to other values for some reason */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh; /* Make sure the footer stays at the bottom on short pages */
+}
+
+/* Box to center content on wide screens */
+.centerBox {
+    width: 900px;
+    margin: auto;
+}
+
+/* Header */
+.headerBox {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 2px 5px grey;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif; /* Use the cool font we imported earlier */
+}
+
+.headerText {
+    color: maroon;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* Nav bar (part of header) */
+.navLinks a {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    font-style: italic;
+    margin-right: 25px;
+    transition: color ease 0.2s;
+}
+
+.navLinks a:hover {
+    color: rgb(160, 160, 160);
+}
+
+.navLinks a:active {
+    color: rgb(160, 160, 160);
+}
+
+.navSelected {
+    color: maroon !important;
+}
+
+/* Page body box */
+.bodyBox{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    font-size: 16px;
+    padding-bottom: 110px;
+}
+
+.bodyBox a {
+    color: rgb(0, 0, 200);
+    text-decoration: none;
+}
+
+.bodyBox a:hover {
+    text-decoration: underline;
+}
+
+.bodyBox ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.bodyBox img {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    max-width: 650px;
+}
+
+.bodyBox h1 {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    line-height: 1em;
+}
+
+/* Robots for home page */
+.robots {
+    text-align: center;
+}
+
+.robots div {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.robots img {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 250px;
+    height: auto;
+}
+
+/* Components list for electrical page */
+.componentsList div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: lightgray;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100) !important;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer a {
+    color: rgb(100, 100, 100) !important;
+    margin-right: 30px;
+}
+
+.footer img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* Social icons (part of footer) */
+.socialIcons {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Custom scroll bar :) */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(230, 230, 230);
+}
+
+::-webkit-scrollbar-thumb {
+    background: maroon;
+}
+
+/* Screen resizing rules (to make it mobile friendly) */
+@media only screen and (max-width: 1000px){
+    .centerBox{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .headerBox {
+        padding-left: 20px;
+    }
+
+    .headerText{
+        font-size: 42px;
+    }
+
+    .centerBox{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 725px){
+    .bodyBox img {
+        max-width: 100%;
+    }
+
+    .bodyBox h1 {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .headerText{
+        font-size: 36px;
+    }
+
+    .navLinks a {
+        font-size: 16px;
+    }
+}

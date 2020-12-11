@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buckingham Robotics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <div class="headerBox">
+        <div class="centerBox">
+            <a href="." class="headerText">Buckingham Robotics</a>
+            <div class="navLinks">
+                <a href=".">Home</a>
+                <a href="fabrication.html">Fabrication</a>
+                <a href="electrical.html" class="navSelected">Electrical</a>
+                <a href="programming.html">Programming</a>
+                <a href="prb.html">PR & Business</a>
+            </div>
+        </div>
+    </div>
+    <div class="bodyBox">
+        <div class="centerBox">
+            <h1>About Electrical</h1>
+            <hr />
+            The electrical department is responsible for the wiring of the robot
+            as well as all of the electronic components on the robot with the
+            exception of motors (this is done by <a href="fabrication.html">fabrication</a>).
+            Electrical’s main task during build season is to create the electrical
+            board which is then mounted to the robot. The electrical board is a
+            panel containing all of the main electrical components of the robot
+            including the RoboRIO, the PDP, and the PCM.
+
+            <h1>Electrical Components</h1>
+            <hr />
+            The following image is a map of the components and connections of a
+            somewhat standard electrical board.
+            <img src="img/electrical/electricalBoard.jpg" width="850px">
+
+            <div class="componentsList">
+                <div>
+                    <b>RoboRIO:</b> The roboRIO is the “brains” of the robot. It stores
+                    and runs the code on the robot and communicates with the radio and
+                    PDP to control the motors and get input from the driver’s station.
+                </div>
+                <div>
+                    <b>Power Distribution Panel (PDP):</b> The PDP regulates the power usage
+                    of the robot and distributes power from the battery to the various
+                    components. The PDP provides a total of 16 output pairs from which the
+                    motor controllers and thus the motors themselves receive power.                
+                </div>
+                <div>
+                    <b>Pneumatics Control Module (PCM):</b> The PCM receives signals from
+                    the roboRIO and controls the pneumatic solenoids on the robot.               
+                </div>
+                <div>
+                    <b>Voltage Regulator Module (VRM):</b> The VRM provides and regulates
+                    power from the PDP to the radio, vision cameras, and custom circuits.               
+                </div>
+                <div>
+                    <b>Motor Controllers:</b> Motor controllers such as the Talon SRX or
+                    Spark Max use control data from the roboRIO and power from the PDP to
+                    produce variable voltage for the motors.            
+                </div>
+                <div>
+                    <b>Radio:</b> The radio provides two way communication between the
+                    robot and the driver’s station or field via WiFi. The radio receives
+                    power from the VRM and is connected to the roboRIO via ethernet.          
+                </div>
+                <div>
+                    <b>Main Circuit Breaker:</b> The 120A Main Circuit Breaker is a
+                    key component of a robot because it serves as both an on/off switch
+                    as well as a breaker to protect other components.
+                </div>
+                <div>
+                    <b>Robot Signal Light (RSL):</b> The RSL is a required component of
+                    all FRC robots. It serves as an indicator of whether the robot is on
+                    and whether it is enabled. While the robot is powered off the RSL is
+                    off, while the robot is powered on but is dissabled the RSL remains
+                    on, and while the robot is enabled the RSL blinks.
+                </div>
+            </div>
+
+            <h1>Helpfull Links</h1>
+            <hr />
+            <ul>
+                <li><a href="https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-1/control-system-hardware.html" target="blank">Control System Hardware Overview</a></li>
+                <li><a href="https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-1/how-to-wire-a-robot.html" target="blank">How to Wire an FRC Robot</a></li>
+                <li><a href="https://docs.wpilib.org/en/latest/docs/hardware/hardware-basics/wiring-pneumatics.html" target="blank">Wiring Pneumatics</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="centerBox">
+            <a href="https://roboknights100.wixsite.com/roboknights5496" target="blank">Our Offical Website</a>
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/roboknights5496/" target="blank">
+                    <img src="img/instagramIcon.png">
+                </a>
+                <a href="https://www.youtube.com/channel/UCgFtJw7S__pj3zt9FwOT8xg" target="blank">
+                    <img src="img/youtubeIcon.png">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100010407607167" target="blank">
+                    <img src="img/facebookIcon.png">
+                </a>
+                <a href="https://twitter.com/roboknights5496" target="blank">
+                    <img src="img/twitterIcon.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
